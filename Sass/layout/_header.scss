@@ -1,2 +1,87 @@
 @use "../abstracts/variables";
-@use "../abstracts/mixins";
+@use"../abstracts/mixins";
+
+
+.header{
+
+    padding: 26px 0 59px 0;
+
+    &__logo-title{
+        color: variables.$white-red;
+        font-family: "Inter";
+        font-size: 36px;
+        font-weight: 900;
+
+    }
+    
+    .header__center{
+
+
+        .header__center-search{
+
+            .search__box{
+                position: relative;
+
+                .search__icon{
+                    @include mixins.search-icon($top: 50%, $left: 79px)  
+                }
+                .search__input{
+                    padding: 12px 100px 12px 47px;
+                    border: 2px solid #ff4c34;
+                    border-radius: 15px;
+                    margin: 0 40px 0 60px;
+                    
+                }
+    
+                .enter__btn{
+                    color: variables.$white;
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 13px 13px;
+                    border-radius: 15px;
+                    background: variables.$white-red;
+                    @include mixins.search-icon($top: 50%, $right: 40px)
+                }
+            }
+            .map__box{
+                position: relative;
+                
+                .map__icon{
+                    height: 20px;
+                    @include mixins.search-icon($position:absolute, $top: 50%, $left: 13px)
+                }
+                .map__input{
+                    padding: 15px 30px 14px 42px;
+                    border-radius: 15px;
+                    border: none;
+                    background: variables.$white-red;
+                }
+            }
+
+        }
+    }
+    .header__button{
+
+        .languages{
+            padding: 0 38px 0 178px;
+
+            .globe__icon{
+                display: block;
+                margin: 0 auto;
+            }
+            .language__select{
+                border: none;
+            }
+
+        }
+        .enterr__btn{
+            color: variables.$white;
+            padding: 12px 30px;
+            border-radius: 15px;
+            background: #FF4C34;
+        }
+
+    }
+}    

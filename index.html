@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online__restorant</title>
-    <!-- Gilroy font -->
+    <!-- Inter font -->
     <link rel="stylesheet" href="./fonts/Inter/stylesheet.css">
-    <!-- Zing rust demo -->
+    <!-- Montserrat font -->
     <link rel="stylesheet" href="./fonts/Montserrat/stylesheet.css">
     <!-- Bootstrap  css -->
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
@@ -21,21 +21,25 @@
 
     <!-- Header section start -->
 
-    <header class="header">
-        <div class="header">
+    <header class="headerr">
+        <div class="header d-flex align-items-center justify-content-center">
             <div class="header__logo">
               <h3 class="header__logo-title">Delivery</h3>
             </div>
-            <div class="header__center">
-              <div class="header__center-search">
+            <div class="header__center d-flex align-items-center justify-content-center">
+              <div class="header__center-search d-flex align-items-center justify-content-center">
+                <div class="search__box">
                 <img class="search__icon" src="./images/icons/search__icon.svg" alt="search__icon">
-                <input type="search" name="search" placeholder="Найти ресторан или блюдо">
+                <input class="search__input" type="text" name="text" placeholder="Найти ресторан или блюдо">
                 <button class="enter__btn">Поиск</button>
-                <img class="map__icon" src="./images/icons/map__icon.svg" alt="map__icon">
-                <input type="text" name="text" placeholder="Укажите адрес доставки">
+                </div>
+                <div class="map__box">
+                  <img class="map__icon" src="./images/icons/map__icon.svg" alt="map__icon">
+                  <input class="map__input" type="text" name="text" placeholder="Укажите адрес доставки">
+                </div>
               </div>
             </div>
-            <div class="header__button">
+            <div class="header__button d-flex align-items-center justify-content-center">
               <div class="languages">
                 <img class="globe__icon" src="./images/icons/globe__icon.svg" alt="globe__icon">
                 <select class="language__select">
@@ -67,7 +71,7 @@
     <!-- Bootstrap js -->
     <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
     <!-- swiper js -->
-    <script src="./libs/swiper/swiper.min.js"></script>
+    <script src="./libs/swiper/swiper.min.css"></script>
     <!-- custom js -->
     <script src="./js/main.js"></script>
 </body>
