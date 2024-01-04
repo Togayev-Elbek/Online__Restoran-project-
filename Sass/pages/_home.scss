@@ -1,2 +1,85 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
+
+.home__pages{
+
+    margin: 56px 0 64px 0;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 20px;
+
+    .box{
+        padding: 16px;
+        background: variables.$blue;
+        border-radius: 15px;
+
+        .box__content{
+            width: 215px;
+
+            .brand__name{
+                color: variables.$white;
+                font-family: "Montserrat";
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 143%;
+                text-transform: uppercase;
+            }
+            .price{
+                color: variables.$white;
+                font-family: "Montserrat";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 143.9%;
+                padding: 4px 0 12px 0;
+
+                .price__extra{
+                    color: variables.$white;
+                    font-family: "Montserrat";
+                    font-size: 24px;
+                    font-weight: 800;
+                    line-height: 143.%;
+                    text-transform: uppercase;
+                }
+            }
+            .food__name{
+                color: variables.$white;
+                font-family: "Montserrat";
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding-bottom: 8px;
+            }
+            .btn{
+                border-radius: 15px;
+                background: variables.$white-red;
+
+                .button{
+                    color: variables.$white;
+                    font-family: "Montserrat";
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .one{
+        background: variables.$purple;
+
+        .box__content{
+
+            .food__name{
+                padding-top: 36px;
+            }
+        }
+        .box__img{
+            width: cover;
+            background-repeat: no-repeat;
+            background-image: url(../images/bg-img/soop__bg-img.png.png);
+            background-position: center;
+        }
+    }
+    .two{
+        background: variables.$white-blue;
+    }
+
+}

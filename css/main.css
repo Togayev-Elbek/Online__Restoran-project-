@@ -60,7 +60,7 @@ body {
 }
 
 .header {
-  padding: 26px 0 59px 0;
+  padding: 26px 0 0 0;
 }
 .header__logo-title {
   color: #FF4C34;
@@ -117,7 +117,7 @@ body {
   cursor: pointer;
 }
 .header .header__center .header__center-search .map__box .map__input {
-  padding: 14px 30px 13px 42px;
+  padding: 15px 30px 14px 42px;
   border-radius: 15px;
   border: none;
   background: #FF4C34;
@@ -137,4 +137,71 @@ body {
   padding: 12px 30px;
   border-radius: 15px;
   background: #FF4C34;
+}
+
+.home__pages {
+  margin: 56px 0 64px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+.home__pages .box {
+  padding: 16px;
+  background: #3472EA;
+  border-radius: 15px;
+  display: flex;
+}
+.home__pages .box .box__content {
+  width: 215px;
+}
+.home__pages .box .box__content .brand__name {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 143%;
+  text-transform: uppercase;
+}
+.home__pages .box .box__content .price {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 143.9%;
+  padding: 4px 0 12px 0;
+}
+.home__pages .box .box__content .price .price__extra {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 143.9%;
+  text-transform: uppercase;
+}
+.home__pages .box .box__content .food__name {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+.home__pages .box .box__content .btn {
+  border-radius: 15px;
+  background: #FF4C34;
+}
+.home__pages .box .box__content .btn .button {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+}
+.home__pages .one {
+  background: #AF30C3;
+}
+.home__pages .one .box__content .food__name {
+  padding-top: 36px;
+}
+.home__pages .two {
+  background: #2FAAD1;
 }/*# sourceMappingURL=main.css.map */
