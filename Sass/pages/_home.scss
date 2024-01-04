@@ -80,6 +80,14 @@
     }
     .two{
         background: variables.$white-blue;
+
+        .box__img{
+            position: relative;
+
+            .img{
+                @include mixins.search-icon($position:absolute, $top: 50%, $left: px)
+            }
+        }
     }
 
 }
