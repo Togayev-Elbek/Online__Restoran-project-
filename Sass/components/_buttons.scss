@@ -1,2 +1,83 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
+
+.tabs{
+    border-radius: 15px;
+    background: variables.$white-red;
+    padding: 8px;
+
+    .nav{
+        border-bottom: none;
+        align-items: center;
+
+        .nav-item{
+
+            .nav__link{
+                color: variables.$gray;
+            }  
+            .nav-link{
+                color: #FFF;
+                font-family: "Montserrat";
+                font-size: 14px;
+                font-weight: 500;
+                border-radius: 30px;
+  
+                &:focus{
+                    color: variables.$gray;
+                    font-family: "Montserrat";
+                    font-size: 14px;
+                    font-weight: 600;
+                    border-radius: 30px;
+                    padding: 8px 16px;
+                    background-color: variables.$white; 
+                }
+                &:active{
+                    color: variables.$gray;
+                    font-family: "Montserrat";
+                    font-size: 14px;
+                    font-weight: 600;
+                    border-radius: 30px;
+                    padding: 8px 16px;
+                    background-color: variables.$white;
+                }
+                &:hover{
+                    border: 1px solid variables.$white-red;
+                }    
+                .tab__select{
+                    color: #FFF;
+                    font-family: "Montserrat";
+                    font-size: 14px;
+                    font-weight: 500;
+                    border: none;
+                    background-color: inherit;
+                }
+                .select{
+                    color: #FFF;
+                    font-family: "Montserrat";
+                    font-size: 14px;
+                    font-weight: 500;
+                    border: 2px solid variables.$white;
+                    border-radius: 15px;
+                    padding: 8px 16px;
+                    background-color: variables.$white-red;
+                    display: inline-block;
+                    margin-left: 84px;
+                }
+                
+            }
+            .nav-lin{
+                color: #FFF;
+                font-family: "Montserrat";
+                font-size: 14px;
+                font-weight: 500;
+                padding: 8px 40px 8px 16px;
+                border-radius: 30px;
+                border: 2px solid variables.$white;
+                position: relative;
+            }
+            .control{
+                @include mixins.search-icon($position:absolute, $top: 50%, $right:187px)
+            }
+        }
+    }
+}

@@ -59,6 +59,86 @@ body {
   margin: 0 20px;
 }
 
+.tabs {
+  border-radius: 15px;
+  background: #FF4C34;
+  padding: 8px;
+}
+.tabs .nav {
+  border-bottom: none;
+  align-items: center;
+}
+.tabs .nav .nav-item .nav__link {
+  color: #1E1E1E;
+}
+.tabs .nav .nav-item .nav-link {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+.tabs .nav .nav-item .nav-link:focus {
+  color: #1E1E1E;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 8px 16px;
+  background-color: #FFF;
+}
+.tabs .nav .nav-item .nav-link:active {
+  color: #1E1E1E;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 8px 16px;
+  background-color: #FFF;
+}
+.tabs .nav .nav-item .nav-link:hover {
+  border: 1px solid #FF4C34;
+}
+.tabs .nav .nav-item .nav-link .tab__select {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background-color: inherit;
+}
+.tabs .nav .nav-item .nav-link .select {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid #FFF;
+  border-radius: 15px;
+  padding: 8px 16px;
+  background-color: #FF4C34;
+  display: inline-block;
+  margin-left: 84px;
+}
+.tabs .nav .nav-item .nav-lin {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 40px 8px 16px;
+  border-radius: 30px;
+  border: 2px solid #FFF;
+  position: relative;
+}
+.tabs .nav .nav-item .control {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  right: 187px;
+  left: auto;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 .header {
   padding: 26px 0 0 0;
 }
@@ -146,10 +226,8 @@ body {
   gap: 20px;
 }
 .home__pages .box {
-  padding: 16px;
   background: #3472EA;
   border-radius: 15px;
-  display: flex;
 }
 .home__pages .box .box__content {
   width: 215px;
@@ -159,23 +237,21 @@ body {
   font-family: "Montserrat";
   font-size: 20px;
   font-weight: 700;
-  line-height: 143%;
   text-transform: uppercase;
+  padding-top: 16px;
 }
 .home__pages .box .box__content .price {
   color: #FFF;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
-  line-height: 143.9%;
-  padding: 4px 0 12px 0;
+  padding: 4px 0 0 0;
 }
 .home__pages .box .box__content .price .price__extra {
   color: #FFF;
   font-family: "Montserrat";
   font-size: 24px;
   font-weight: 800;
-  line-height: 143.9%;
   text-transform: uppercase;
 }
 .home__pages .box .box__content .food__name {
@@ -196,12 +272,62 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
+.home__pages .three {
+  padding-left: 16px;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg-imgs/coffe__bg-img.png);
+  background-position: right;
+  z-index: 1;
+}
+.home__pages .three .box__content .price {
+  padding-bottom: 12px;
+}
+.home__pages .three .box__content .food__name {
+  line-height: 143.9%;
+}
 .home__pages .one {
   background: #AF30C3;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg-imgs/soop__bg-img.png);
+  background-position: left;
+  z-index: 1;
+  padding-right: 16px;
+}
+.home__pages .one .box__content {
+  margin-left: 10px;
 }
 .home__pages .one .box__content .food__name {
   padding-top: 36px;
 }
 .home__pages .two {
   background: #2FAAD1;
+  padding-left: 16px;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg-imgs/lavash__bg-img.png);
+  background-position: right;
+  z-index: 1;
+}
+.home__pages .two .price {
+  padding-bottom: 12px;
+}
+.home__pages .two .box__img {
+  position: relative;
+}
+.home__pages .two .box__img .img__one {
+  position: absolute;
+  top: auto;
+  bottom: -115px;
+  right: -205px;
+  left: auto;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.home__pages .two .box__img .img__two {
+  position: absolute;
+  top: auto;
+  bottom: -170px;
+  right: auto;
+  left: auto;
+  transform: translateY(-50%);
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

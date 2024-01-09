@@ -9,7 +9,6 @@
 	gap: 20px;
 
     .box{
-        padding: 16px;
         background: variables.$blue;
         border-radius: 15px;
 
@@ -21,23 +20,21 @@
                 font-family: "Montserrat";
                 font-size: 20px;
                 font-weight: 700;
-                line-height: 143%;
                 text-transform: uppercase;
+                padding-top: 16px;
             }
             .price{
                 color: variables.$white;
                 font-family: "Montserrat";
                 font-size: 14px;
                 font-weight: 400;
-                line-height: 143.9%;
-                padding: 4px 0 12px 0;
+                padding: 4px 0 0 0;
 
                 .price__extra{
                     color: variables.$white;
                     font-family: "Montserrat";
                     font-size: 24px;
-                    font-weight: 800;
-                    line-height: 143.%;
+                    font-weight: 800; 
                     text-transform: uppercase;
                 }
             }
@@ -62,30 +59,57 @@
             }
         }
     }
+    .three{
+        padding-left: 16px;
+        
+        background-repeat: no-repeat;
+        background-image: url(../images/bg-imgs/coffe__bg-img.png);
+        background-position: right;
+        z-index: 1;
+        .box__content{
+
+            .price{
+                padding-bottom: 12px;
+            }
+            .food__name{
+                line-height: 143.9%;
+            }
+        }
+    }
     .one{
         background: variables.$purple;
+        background-repeat: no-repeat;
+        background-image: url(../images/bg-imgs/soop__bg-img.png);
+        background-position: left;
+        z-index: 1;
+        padding-right: 16px;
 
         .box__content{
+            margin-left: 10px;
 
             .food__name{
                 padding-top: 36px;
             }
         }
-        .box__img{
-            width: cover;
-            background-repeat: no-repeat;
-            background-image: url(../images/bg-img/soop__bg-img.png.png);
-            background-position: center;
-        }
-    }
+    }    
     .two{
         background: variables.$white-blue;
-
+        padding-left: 16px;
+        background-repeat: no-repeat;
+        background-image: url(../images/bg-imgs/lavash__bg-img.png);
+        background-position: right;
+        z-index: 1;
+        .price{
+            padding-bottom: 12px;
+        }
         .box__img{
             position: relative;
 
-            .img{
-                @include mixins.search-icon($position:absolute, $top: 50%, $left: px)
+            .img__one{
+                @include mixins.search-icon($position:absolute, $right: -205px, $bottom: -115px)
+            }
+            .img__two{
+                @include mixins.search-icon($position:absolute, $bottom:-170px)
             }
         }
     }
