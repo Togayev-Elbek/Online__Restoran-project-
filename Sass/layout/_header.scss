@@ -62,26 +62,30 @@
 
         }
     }
-    .header__button{
+}
+.action{
+    margin: 32px 0 48px 0;
 
-        .languages{
-            padding: 0 38px 0 178px;
+    .title{
+        padding-bottom: 24px;
+    }
+    .box{
+        border-radius: 15px;
+        position: relative;
 
-            .globe__icon{
-                display: block;
-                margin: 0 auto;
-            }
-            .language__select{
-                border: none;
-            }
-
-        }
-        .enterr__btn{
-            color: variables.$white;
-            padding: 12px 30px;
+        .discount{
+            padding: 6px;
             border-radius: 15px;
-            background: #FF4C34;
-        }
+            background: variables.$green;
+            flex-wrap: wrap;
 
+            .discount__value{
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 9px;
+                font-weight: 600;
+                padding-left: 6px;
+            }
+        }
     }
 }    

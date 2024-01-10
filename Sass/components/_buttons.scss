@@ -1,6 +1,27 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
+.header__button{
 
+    .languages{
+        padding: 0 38px 0 178px;
+
+        .globe__icon{
+            display: block;
+            margin: 0 auto;
+        }
+        .language__select{
+            border: none;
+        }
+
+    }
+    .enterr__btn{
+        color: variables.$white;
+        padding: 12px 30px;
+        border-radius: 15px;
+        background: #FF4C34;
+    }
+
+}
 .tabs{
     border-radius: 15px;
     background: variables.$white-red;
@@ -11,7 +32,7 @@
         align-items: center;
 
         .nav-item{
-
+            position: relative;
             .nav__link{
                 color: variables.$gray;
             }  
@@ -73,7 +94,6 @@
                 padding: 8px 40px 8px 16px;
                 border-radius: 30px;
                 border: 2px solid variables.$white;
-                position: relative;
             }
             .control{
                 @include mixins.search-icon($position:absolute, $top: 50%, $right:187px)

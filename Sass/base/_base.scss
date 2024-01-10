@@ -25,7 +25,6 @@ h6 {
 textarea:focus,
 select:focus {
 	outline: none !important;
-	-webkit-appearance: none;
 	box-shadow: none !important;
 }
 
@@ -42,7 +41,6 @@ a:active,
 a:focus {
 	outline: 0;
 	border: none;
-	-moz-outline-style: none;
 }
 a:hover{
 	color: #fff;

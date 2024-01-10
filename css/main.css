@@ -25,7 +25,6 @@ h6 {
 textarea:focus,
 select:focus {
   outline: none !important;
-  -webkit-appearance: none;
   box-shadow: none !important;
 }
 
@@ -42,7 +41,6 @@ a:active,
 a:focus {
   outline: 0;
   border: none;
-  -moz-outline-style: none;
 }
 
 a:hover {
@@ -55,8 +53,26 @@ a:hover {
 
 body {
   font-family: Montserrat, sans-serif;
+  font-weight: 400px;
   background: #FFF;
   margin: 0 20px;
+}
+
+.header__button .languages {
+  padding: 0 38px 0 178px;
+}
+.header__button .languages .globe__icon {
+  display: block;
+  margin: 0 auto;
+}
+.header__button .languages .language__select {
+  border: none;
+}
+.header__button .enterr__btn {
+  color: #FFF;
+  padding: 12px 30px;
+  border-radius: 15px;
+  background: #FF4C34;
 }
 
 .tabs {
@@ -202,21 +218,29 @@ body {
   border: none;
   background: #FF4C34;
 }
-.header .header__button .languages {
-  padding: 0 38px 0 178px;
+
+.action {
+  margin: 32px 0 48px 0;
 }
-.header .header__button .languages .globe__icon {
-  display: block;
-  margin: 0 auto;
+.action .title {
+  padding-bottom: 24px;
 }
-.header .header__button .languages .language__select {
-  border: none;
-}
-.header .header__button .enterr__btn {
-  color: #FFF;
-  padding: 12px 30px;
+.action .box {
   border-radius: 15px;
-  background: #FF4C34;
+  position: relative;
+}
+.action .box .discount {
+  padding: 6px;
+  border-radius: 15px;
+  background: #00AE63;
+  flex-wrap: wrap;
+}
+.action .box .discount .discount__value {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 9px;
+  font-weight: 600;
+  padding-left: 6px;
 }
 
 .home__pages {
